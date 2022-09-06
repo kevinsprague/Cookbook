@@ -11,10 +11,12 @@
 \usepackage{enumitem}
 \usepackage{xparse}
 \usepackage{fancyhdr}
-\usepackage{nicefrac}
+\usepackage{xfrac}
 \pagestyle{empty} % no page numbers
 % Ingredients list
 \fancyhf{}
+% TODO: Improve parsing, maybe have it check to make sure that the optional argument reads `multi`
+
 \NewDocumentEnvironment{recipe}{mo}{
 % print recipe title
 	\hfil{\MakeUppercase{\titlesize{\bf #1}}}
@@ -24,7 +26,7 @@
 	}
 	%\vspace{1cm}
 	\item[]
-}{\end{list} \IfNoValueTF{#2}{\newpage}{}}
+}{\end{list} \IfNoValueTF{#2}{\newpage}{\vspace{2em}}}
 
 % The next 4 commands are optional add-ins
 \newcommand{\blurb}[1]{\textit{#1} \bigbreak } % A text blurb about the recipe. Maybe a story? Maybe some options? 

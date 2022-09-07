@@ -8,6 +8,7 @@
 \LoadClass[10pt,letterpaper]{article}
 \usepackage[letterpaper, portrait, margin=1in]{geometry} % for the margins
 \usepackage[T1]{fontenc}
+\usepackage{gensymb}
 \usepackage{enumitem}
 \usepackage{xparse}
 \usepackage{fancyhdr}
@@ -20,13 +21,15 @@
 \NewDocumentEnvironment{recipe}{mo}{
 % print recipe title
 	\hfil{\MakeUppercase{\titlesize{\bf #1}}}
-	\vspace{0.5cm}
+	\vspace{0.4em}
+	\hrule
+	\vspace{0.2em}
 	\begin{list}{}{
 	\setlength{\leftmargin}{1em}
 	}
 	%\vspace{1cm}
 	\item[]
-}{\end{list} \IfNoValueTF{#2}{\newpage}{\vspace{2em}}}
+}{\end{list} \IfNoValueTF{#2}{\newpage}{\vspace{1.5em}}}
 
 % The next 4 commands are optional add-ins
 \newcommand{\blurb}[1]{\textit{#1} \bigbreak } % A text blurb about the recipe. Maybe a story? Maybe some options? 

@@ -37,4 +37,4 @@ jobs:
         with:
           branch: main
           force: false
-#          github_token: {{ secrets.GITHUB_TOKEN }}
+          github_token: \{{ secrets.GITHUB_TOKEN }}

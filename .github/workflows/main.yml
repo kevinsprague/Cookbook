@@ -31,6 +31,7 @@ jobs:
           git config --local user.name "github action"
           mv $HOME/cookbook.pdf $(pwd)
           git add cookbook.pdf
+          git commit --amend --allow-empty-message --no-edit
       - name: push pdf
         uses: ad-m/github-push-action@v0.6.0
         with:

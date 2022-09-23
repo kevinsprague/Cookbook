@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ProvidesClass{cookbook}[Recipe]
-\LoadClass[10pt,letterpaper]{article}
+\LoadClass[openany,10pt,letterpaper]{book}
 \usepackage[letterpaper, portrait, margin=1in]{geometry} % for the margins
 \usepackage[T1]{fontenc}
 \usepackage{gensymb}

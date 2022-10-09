@@ -38,7 +38,8 @@
 \newcommand{\inacttime}[1]{\textit{\textsc{Inactive Time:}} #1}
 \newcommand{\ingredients}{
 % Make a list of ingredients
-	\textbf{\textsc{Ingredients: }}
+        \par
+        \textbf{\textsc{Ingredients: }}
 	\begin{itemize}
 	\@checkIngredients
 }

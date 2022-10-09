@@ -36,5 +36,5 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           branch: main
-          force: false
+          force: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
